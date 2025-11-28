@@ -64,21 +64,21 @@ const ex10 = () => {
 };
 
 const ex11 = () => {
-  const urls = /^https:\/\/+[^/\s].[^/\s]$/;
+  const urls = /^https:\/\/[^/\s]+.[^/\s]+$/;
   console.log(urls.test("https://www.youtube.com"));
 };
 
 const ex12 = () => {
-  const regexContraseña = /^(?=.*[A-Z])(?=.*[a-z])(?=.*\d).{8,}$/;
-  console.log(regexContraseña.test("as3HOLA4"));
+  const etiquetas = /<\/?([a-z]|[A-Z]|\d)+>/g;
+  console.log("<h1>HOLA</h1>".replace(etiquetas, ""));
 };
 
 const ex13 = () => {
-  const regexContraseña = /^(?=.*[A-Z])(?=.*[a-z])(?=.*\d).{8,}$/;
-  console.log(regexContraseña.test("as3HOLA4"));
+  const divisor = /\b([A-Z]|[a-z]|á|é|í|ó|ú|\s)+\b/g;
+  console.log("Hola. Cómo estás? Bien!".match(divisor));
 };
 
 const ex14 = () => {
-  const regexContraseña = /^(?=.*[A-Z])(?=.*[a-z])(?=.*\d).{8,}$/;
-  console.log(regexContraseña.test("as3HOLA4"));
+  const fecha = /^\d{2}\/\d{2}\/\d{4}$/;
+  console.log(fecha.test("20/08/2007"));
 };
