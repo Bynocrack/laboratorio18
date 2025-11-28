@@ -57,3 +57,28 @@ const ex06 = async () => {
     console.log("Error", e);
   }
 };
+
+const ex10 = () => {
+  const regexContraseña = /^(?=.*[A-Z])(?=.*[a-z])(?=.*\d).{8,}$/;
+  console.log(regexContraseña.test("as3HOLA4"));
+};
+
+const ex11 = () => {
+  const urls = /^https:\/\/+[^/\s].[^/\s]$/;
+  console.log(urls.test("https://www.youtube.com"));
+};
+
+const ex12 = () => {
+  const regexContraseña = /^(?=.*[A-Z])(?=.*[a-z])(?=.*\d).{8,}$/;
+  console.log(regexContraseña.test("as3HOLA4"));
+};
+
+const ex13 = () => {
+  const regexContraseña = /^(?=.*[A-Z])(?=.*[a-z])(?=.*\d).{8,}$/;
+  console.log(regexContraseña.test("as3HOLA4"));
+};
+
+const ex14 = () => {
+  const regexContraseña = /^(?=.*[A-Z])(?=.*[a-z])(?=.*\d).{8,}$/;
+  console.log(regexContraseña.test("as3HOLA4"));
+};
